@@ -3,6 +3,7 @@ import React from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { StatusBar } from 'expo-status-bar';
 import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
+import ImageSlider from '../components/ImageSlider';
 
 
 {/*
@@ -30,17 +31,30 @@ export default function Home(){
                 Workout
             </Text>
         </View>
+        {/* iNSERT IMAGE LINK ON LINE 36 BY SOURCE*/}
         <View className="flex justify-center items-center space-y-2">
             <Image 
-                source={require('../assets/images/')}
+                source={require('../assets/images/ ')} 
                 style={{height: hp(6), width: wp(6)}}
                 className="rounded-full" 
                 />
-            <View className="bg-neutral-200 rounded-full justify-center items-center">
-                
+            <View 
+                className="bg-neutral-200 rounded-full justify-center items-center"
+                style={{height: hp(5.5), width: wp(5.5)}}>
+            
             </View>
         </View>
        </View>
+        
+        {/* Image slider section*/}
+        <View>
+            <ImageSlider>
+                
+            </ImageSlider>
+
+        </View>
+
+
     </SafeAreaView>
     )
 }
