@@ -3,28 +3,11 @@ import React from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { StatusBar } from 'expo-status-bar';
 import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
-        
 
 
 {/*
     edges - prevents the background color from overlapping with the top of the screen
 */}
-
-{/* list of images for image slider  */}
-     {/* const data= [
-    {id: 1, title: 'BMI tracker'},
-    {id: 2, title: 'Calorie tracker'},
-    {id: 3, title: 'Injuries'},
-    {id: 4, title: 'Workout planner'}
-]*/}
-
-
-
-{/* returns the name of each image within the image slider */}
-        {/* const _renderItem = ({item, index}) => {
-    return <Text> {item.title} </Text>
-}*/}
-
 
 
 export default function Home(){
@@ -58,17 +41,6 @@ export default function Home(){
         </View>
        </View>
         
-        {/* Image slider section*/}
-        {/*    <View>
-           <Carousel 
-                data={data}
-                renderItem={_renderItem}
-                sliderWidth={Dimensions.get('window').width}
-                itemWidth={Dimensions.get('window').width}
-                />
-
-        </View>*/}
-
         {/* */}
         {/* */}
         {/* */}
