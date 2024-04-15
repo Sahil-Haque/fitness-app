@@ -3,6 +3,7 @@ import React from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { StatusBar } from 'expo-status-bar';
 import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
+import BodyParts from '../components/BodyParts';
 
 
 {/*
@@ -41,14 +42,14 @@ export default function Home(){
         </View>
        </View>
         
-        {/* */}
-        {/* */}
-        {/* */}
-        {/* */}
+    {/* Body parts list*/}
+    <View className="flex-1" >
+        <BodyParts />
+    </View>
 
 
-     
 
+        {/* */}
 
     </SafeAreaView>
     )
