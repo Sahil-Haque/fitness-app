@@ -1,14 +1,31 @@
-import { View, Text } from 'react-native';
+import { View, Text, Dimensions, Image } from 'react-native';
 import React from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { StatusBar } from 'expo-status-bar';
 import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
-import ImageSlider from '../components/ImageSlider';
+        
 
 
 {/*
     edges - prevents the background color from overlapping with the top of the screen
 */}
+
+{/* list of images for image slider  */}
+     {/* const data= [
+    {id: 1, title: 'BMI tracker'},
+    {id: 2, title: 'Calorie tracker'},
+    {id: 3, title: 'Injuries'},
+    {id: 4, title: 'Workout planner'}
+]*/}
+
+
+
+{/* returns the name of each image within the image slider */}
+        {/* const _renderItem = ({item, index}) => {
+    return <Text> {item.title} </Text>
+}*/}
+
+
 
 export default function Home(){
     return(
@@ -34,24 +51,31 @@ export default function Home(){
         {/* iNSERT IMAGE LINK ON LINE 36 BY SOURCE*/}
         <View className="flex justify-center items-center space-y-2">
             <Image 
-                source={require('../assets/images/homepage.jpg')}                style={{height: hp(6), width: wp(6)}}
+                source={require('../assets/images/homepage.jpg')}                
+                style={{height: hp(6), width: wp(6)}}
                 className="rounded-full" 
-                />
-            <View 
-                className="bg-neutral-200 rounded-full justify-center items-center"
-                style={{height: hp(5.5), width: wp(5.5)}}>
-            
-            </View>
+            />
         </View>
        </View>
         
         {/* Image slider section*/}
-        <View>
-            <ImageSlider>
+        {/*    <View>
+           <Carousel 
+                data={data}
+                renderItem={_renderItem}
+                sliderWidth={Dimensions.get('window').width}
+                itemWidth={Dimensions.get('window').width}
+                />
 
-            </ImageSlider>
+        </View>*/}
 
-        </View>
+        {/* */}
+        {/* */}
+        {/* */}
+        {/* */}
+
+
+     
 
 
     </SafeAreaView>
