@@ -1,6 +1,7 @@
 import { View, Text } from 'react-native';
 import React from 'react';
-import carousel, {ParallaxImage} from 'react-native-snap-carousel';
+{/* import carousel, {ParallaxImage} from 'react-native-snap-carousel';
+ */}
 import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
 import { sliderImages } from '../constants';
 

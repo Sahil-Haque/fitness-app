@@ -27,12 +27,14 @@ export default function Index() {
          
          className='flex justify-end pb-12 space-y-8'
          >
+        {/* animation for welcome text*/}
          <Animated.View entering={FadeInDown.delay(100)} className='flex items-center'>
             <Text style={{fontSize: hp(5)}} className="text-white font-bold tracking-wide">
                <Text className="text-rose-600"> Welcome </Text> 
             </Text>
          </Animated.View>   
 
+        {/* animation for get started button*/}
          <Animated.View entering={FadeInDown.delay(250).springify()}>
             <TouchableOpacity
                 onPress={()=> router.push('home')}

@@ -34,8 +34,7 @@ export default function Home(){
         {/* iNSERT IMAGE LINK ON LINE 36 BY SOURCE*/}
         <View className="flex justify-center items-center space-y-2">
             <Image 
-                source={require('../assets/images/ ')} 
-                style={{height: hp(6), width: wp(6)}}
+                source={require('../assets/images/homepage.jpg')}                style={{height: hp(6), width: wp(6)}}
                 className="rounded-full" 
                 />
             <View 
@@ -49,7 +48,7 @@ export default function Home(){
         {/* Image slider section*/}
         <View>
             <ImageSlider>
-                
+
             </ImageSlider>
 
         </View>
